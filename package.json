@@ -4,12 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:dev": "",
-    "start": "node server.js",
-    "server": "",
-    "build": "webpack --mode production",
-   "install": "cd server && npm i && cd ../client && npm i",
-    "client": ""
+    "start": "npm run build && cd server && node server.js",
+    "build": "cd client && npm run build",
+   "install": "cd server && npm i && cd ../client && npm i"
   },
   "keywords": [],
   "author": "",
