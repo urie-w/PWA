@@ -18,7 +18,11 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      // Generates the html file
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'JATE',
+      }),
     ],
 
     module: {
