@@ -1,0 +1,27 @@
+{
+  "name": "JATE",
+  "version": "1.0.0",
+  "description": "Text Editor Progressive Web App",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "cd client && npm install && npm run build",
+    "install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "server": "node server/server.js",
+    "start:dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "idb": "^6.0.0",
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
+
